@@ -19,7 +19,7 @@ st.title("Aplikasi Analisis Biaya Produksi Motor dengan Turunan Parsial")
 st.write("L = Tenaga Kerja")
 st.write("K = Bahan Baku")
 st.write("C = Total Biaya") 
-st.a("1 Unit Motor = Rp 23.000.000")
+st.write("1 Unit Motor = Rp 23.000.000")
 # --- Input User ---
 L_val = st.slider("Jumlah Tenaga Kerja (L)", 0, 20, 5)
 K_val = st.slider("Jumlah Bahan Baku (K)", 0, 20, 5)
