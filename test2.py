@@ -13,13 +13,13 @@ dC_dL = sp.diff(C, L)
 dC_dK = sp.diff(C, K)
 
 # --- Judul Aplikasi ---
-st.title("Aplikasi Analisis Biaya Produksi Motor dengan Turunan Parsial")
+st.title("Aplikasi Analisis Biaya Produksi Roti dengan Turunan Parsial")
 
 # --- Keterangan ---
 st.write("L = Tenaga Kerja")
 st.write("K = Bahan Baku")
 st.write("C = Total Biaya") 
-st.write("1 Unit Motor = Rp 23.000.000")
+st.write("1 Unit Roti = Rp 5000")
 # --- Input User ---
 L_val = st.slider("Jumlah Tenaga Kerja (L)", 0, 20, 5)
 K_val = st.slider("Jumlah Bahan Baku (K)", 0, 20, 5)
@@ -33,7 +33,9 @@ st.write(f"Turunan Parsial terhadap L: ∂C/∂L = {dC_dL}")
 st.write(f"Turunan Parsial terhadap K: ∂C/∂K = {dC_dK}")
 
 st.write(f"### Hasil Perhitungan")
-st.write(f"Jika tenaga kerja(L) bertambah {L_val} unit, dengan bahan baku {K_val} unit (∂C/∂L) (L={L_val}, K={K_val}) = {dC_dL_val}", "Unit")
+st.write(f" • Jika tenaga kerja(L) bertambah {L_val} unit, dengan bahan baku {K_val} unit (∂C/∂L) (L={L_val}, K={K_val}) = {dC_dL_val}", "Unit")
+hasil1 = dC_dL_val*5000
+st.write(f"{dC_dL_val} * 5000 = {hasil1}")
 st.write(f"Jika bahan baku(K) bertambah {K_val} unit, dengan tenaga kerja {L_val} unit (∂C/∂K) (L={L_val}, K={K_val}) = {dC_dK_val}", "Unit")
 
 
