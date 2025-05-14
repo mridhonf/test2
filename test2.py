@@ -26,7 +26,7 @@ L_val = st.slider("Jumlah Tenaga Kerja (L)", 0, 20, 5)
 K_val = st.slider("Jumlah Bahan Baku (K)", 0, 20, 5)
 if L_val == 0:
   hasil = tetap
-  else L_val
+  else 20, 5
 
 # --- Evaluasi Turunan ---
 dC_dL_val = dC_dL.subs({L: L_val, K: K_val})
