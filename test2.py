@@ -22,8 +22,8 @@ st.write("C = Total Biaya")
 st.write("1 Unit Roti = Rp 5000")
 
 # --- Input User ---
-L_val = st.slider("Jumlah Tenaga Kerja (L)", 0, 20, 100)
-K_val = st.slider("Jumlah Bahan Baku (K)", 0, 20, 100)
+L_val = st.slider("Jumlah Tenaga Kerja (L)", 0, 20, 5)
+K_val = st.slider("Jumlah Bahan Baku (K)", 0, 20, 5)
 
 # --- Evaluasi Turunan ---
 dC_dL_val = dC_dL.subs({L: L_val, K: K_val})
