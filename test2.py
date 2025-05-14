@@ -16,9 +16,9 @@ dC_dK = sp.diff(C, K)
 st.title("Aplikasi Analisis Biaya Produksi Motor dengan Turunan Parsial")
 
 # --- Keterangan ---
-st.title("L = Tenaga Kerja")
-st.title("K = Bahan Baku")
-st.title("C = Total Biaya") 
+st.write("L = Tenaga Kerja")
+st.write("K = Bahan Baku")
+st.write("C = Total Biaya") 
 # --- Input User ---
 L_val = st.slider("Jumlah Tenaga Kerja (L)", 0, 20, 5)
 K_val = st.slider("Jumlah Bahan Baku (K)", 0, 20, 5)
@@ -31,9 +31,11 @@ st.write(f"### Fungsi Biaya: C(L, K) = 10L² + 20K² + 5LK")
 st.write(f"Turunan Parsial terhadap L: ∂C/∂L = {dC_dL}")
 st.write(f"Turunan Parsial terhadap K: ∂C/∂K = {dC_dK}")
 
-st.markdown("### Evaluasi di Titik:")
+st.write(f"### Hasil Perhitungan")
 st.write(f"∂C/∂L (L={L_val}, K={K_val}) = {dC_dL_val}")
 st.write(f"∂C/∂K (L={L_val}, K={K_val}) = {dC_dK_val}")
+
+st.markdown("### Evaluasi di Titik:")
 
 # --- Plot 3D ---
 fig = plt.figure(figsize=(10, 6))
