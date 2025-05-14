@@ -20,7 +20,6 @@ st.write("L = Tenaga Kerja")
 st.write("K = Bahan Baku")
 st.write("C = Total Biaya") 
 st.write("1 Unit Roti = Rp 5000")
-st.write("   ")
 st.write("=============================================")
 # --- Input User ---
 L_val = st.slider("Jumlah Tenaga Kerja (L)", 0, 20, 5)
