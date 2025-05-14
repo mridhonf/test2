@@ -16,9 +16,9 @@ dC_dK = sp.diff(C, K)
 st.title("Aplikasi Analisis Biaya Produksi Motor dengan Turunan Parsial")
 
 # --- Keterangan ---
-st.title("L = Tenaga Kerja)
-st.title("K = Bahan Baku)
-st.title("C = Total Biaya) 
+st.title("L = Tenaga Kerja")
+st.title("K = Bahan Baku")
+st.title("C = Total Biaya") 
 # --- Input User ---
 L_val = st.slider("Jumlah Tenaga Kerja (L)", 0, 20, 5)
 K_val = st.slider("Jumlah Bahan Baku (K)", 0, 20, 5)
