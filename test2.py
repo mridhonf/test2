@@ -31,11 +31,10 @@ st.write(f"### Fungsi Biaya: C(L, K) = 10L² + 20K² + 5LK")
 st.write(f"Turunan Parsial terhadap L: ∂C/∂L = {dC_dL}")
 st.write(f"Turunan Parsial terhadap K: ∂C/∂K = {dC_dK}")
 
-st.write(f"### Hasil Perhitungan")
+st.markdown("### Evaluasi di Titik:")
 st.write(f"∂C/∂L (L={L_val}, K={K_val}) = {dC_dL_val}")
 st.write(f"∂C/∂K (L={L_val}, K={K_val}) = {dC_dK_val}")
 
-st.markdown("### Evaluasi di Titik:")
 # --- Plot 3D ---
 fig = plt.figure(figsize=(10, 6))
 ax = fig.add_subplot(111, projection='3d')
