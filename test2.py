@@ -13,7 +13,7 @@ dC_dL = sp.diff(C, L)
 dC_dK = sp.diff(C, K)
 
 # --- Judul Aplikasi ---
-st.title("Aplikasi Analisis Biaya Produksi Roti dengan Turunan Parsial")
+st.title("Aplikasi Analisis Biaya Tambahan Produksi Roti dengan Turunan Parsial")
 
 # --- Keterangan ---
 st.write("L = Tenaga Kerja")
