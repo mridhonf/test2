@@ -32,8 +32,8 @@ st.write(f"Turunan Parsial terhadap L: ∂C/∂L = {dC_dL}")
 st.write(f"Turunan Parsial terhadap K: ∂C/∂K = {dC_dK}")
 
 st.write(f"### Hasil Perhitungan")
-st.write(f"∂C/∂L (L={L_val}, K={K_val}) = {dC_dL_val}")
-st.write(f"∂C/∂K (L={L_val}, K={K_val}) = {dC_dK_val}")
+st.write(f"Jika tenaga kerja bertambah {L_val} unit, dengan bahan baku {K_val} unit (∂C/∂L) (L={L_val}, K={K_val}) = {dC_dL_val}", "Unit")
+st.write(f"Jika bahan baku bertambah {K_val} unit, dengan tenaga kerja {L_val} unit (∂C/∂K) (L={L_val}, K={K_val}) = {dC_dK_val}", "Unit")
 
 st.markdown("### Evaluasi di Titik:")
 
