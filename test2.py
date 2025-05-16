@@ -22,11 +22,14 @@ st.write("C = Total Biaya")
 st.write("1 Unit Roti = Rp 5000")
 st.write("=============================================")
 # --- Input User ---
+fL = sp.diff(f, L)
+fK = sp.diff(f, K)
+
 L0 = st.number_input("Nilai L:", value=1)
 K0 = st.number_input("Nilai K:", value=1)
 
-L_val = L.subs({x: x0, y: y0})
-K_val = K.subs({x: x0, y: y0})
+L_val = L.subs({L: L0, K: K0})
+K_val = K.subs({L: L0, K: K0})
 
 # --- Evaluasi Turunan ---
 dC_dL_val = dC_dL.subs({L: L_val, K: K_val})
