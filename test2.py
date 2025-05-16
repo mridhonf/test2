@@ -22,14 +22,16 @@ st.write("C = Total Biaya")
 st.write("1 Unit Roti = Rp 5000")
 st.write("=============================================")
 # --- Input User ---
-fL = sp.diff(L)
-fK = sp.diff(K)
+f = sp.sympify(C)
+fL = sp.diff(f, L)
+fK = sp.diff(f, K)
 
-L0 = st.number_input("Nilai L:", value=1)
-K0 = st.number_input("Nilai K:", value=1)
+st.latex(f"(L, K) = {sp.latex(f)}")
+st.latex(f"\\frac{{\\partial f}}{{\\partial L}} = {sp.latex(fL)}")
+st.latex(f"\\frac{{\\partial f}}{{\\partial K}} = {sp.latex(fK)}")
 
-L_val = L.subs({L: L0, K: K0})
-K_val = K.subs({L: L0, K: K0})
+L_val = st.number_input("Jumlah Tenaga Kerja (L)", value=1)
+K_val = st.number_input("Jumlah Bahan Baku (K)", value=2)
 
 # --- Evaluasi Turunan ---
 dC_dL_val = dC_dL.subs({L: L_val, K: K_val})
