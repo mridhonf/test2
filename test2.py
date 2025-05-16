@@ -25,7 +25,7 @@ f = sp.sympify(C)
 fL = sp.diff(f, L)
 fK = sp.diff(f, K)
 
-st.latex(f"(L, K) = {sp.latex(f)}")
+st.latex(f"C(L, K) = {sp.latex(f)}")
 st.latex(f"\\frac{{\\partial f}}{{\\partial L}} = {sp.latex(fL)}")
 st.latex(f"\\frac{{\\partial f}}{{\\partial K}} = {sp.latex(fK)}")
 
@@ -44,6 +44,8 @@ st.write(f"### Hasil Perhitungan")
 st.write(f" • Jika tenaga kerja(L) bertambah {L_val} unit, dengan bahan baku {K_val} unit (∂C/∂L) (L={L_val}, K={K_val}) Biaya Naik Sekitar ({dC_dL_val}) Unit")
 hasil1 = dC_dL_val*5000
 st.write(f"Hasil Biaya = {dC_dL_val} * 5000 = Rp {hasil1}")
+if dC_dL_val == 0:
+  st.write = "Karyawan Tetap"
 
 st.write(f" • Jika bahan baku(K) bertambah {K_val} unit, dengan tenaga kerja {L_val} unit (∂C/∂K) (L={L_val}, K={K_val}) Biaya Naik Sekitar ({dC_dK_val}) Unit")
 hasil2 = dC_dK_val*5000
