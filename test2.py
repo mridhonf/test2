@@ -22,8 +22,6 @@ st.write("C = Total Biaya")
 st.write("1 Unit Roti = Rp 5000")
 st.write("=============================================")
 # --- Input User ---
-L_val = st.slider("Jumlah Tenaga Kerja (L)", 0, 20, 5)
-K_val = st.slider("Jumlah Bahan Baku (K)", 0, 20, 5)
 
 f = sp.sympify(fungsi_str)
 fL = sp.diff(f, L)
