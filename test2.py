@@ -55,8 +55,8 @@ fig = plt.figure(figsize=(10, 6))
 ax = fig.add_subplot(111, projection='3d')
 
 # Data grid
-L_vals = np.linspace(L0 - 2,K0 +2, 50)
-K_vals = np.linspace(L0 - 2,K0 +2, 50)
+L_vals = np.linspace(0, 50)
+K_vals = np.linspace(0, 50)
 L_mesh, K_mesh = np.meshgrid(L_vals, K_vals)
 C_func = sp.lambdify((L, K), C, 'numpy')
 C_vals = C_func(L_mesh, K_mesh)
