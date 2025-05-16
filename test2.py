@@ -6,7 +6,7 @@ from mpl_toolkits.mplot3d import Axes3D
 
 # --- Simbol ---
 L, K = sp.symbols('L K')
-C = 10*L**2 + 20*K**2 + 5*L*K  # Fungsi biaya
+C = st.text_input("Masukan Fungsi f(L, K) : ", "10*L**2 + 20*K**2 + 5*L*K")  # Fungsi biaya
 
 # --- Turunan Parsial ---
 dC_dL = sp.diff(C, L)
