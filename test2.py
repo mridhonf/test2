@@ -23,7 +23,6 @@ st.write("1 Unit Roti = Rp 5000")
 st.write("=============================================")
 # --- Input User ---
 
-f = sp.sympify(fungsi_str)
 fL = sp.diff(f, L)
 fK = sp.diff(f, K)
 
