@@ -77,3 +77,6 @@ ax.set_ylabel('Bahan Baku (K)')
 ax.set_zlabel('Biaya C(L,K)')
 ax.set_title('Grafik Fungsi Biaya dan Bidang Singgung')
 st.pyplot(fig)
+
+except Exception as e:
+    st.error(f"Terjadi Kesalahan: {e}")
