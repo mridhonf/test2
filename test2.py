@@ -23,8 +23,7 @@ st.write("1 Unit Roti = Rp 5000")
 st.write("=============================================")
 # --- Input User ---
 
-fL = sp.diff(f, L)
-fK = sp.diff(f, K)
+
 
 L0 = st.number_input("Nilai L:", value=1)
 K0 = st.number_input("Nilai K:", value=1)
