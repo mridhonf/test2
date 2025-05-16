@@ -25,7 +25,6 @@ st.write("=============================================")
 L0 = st.number_input("Nilai L:", value=1)
 K0 = st.number_input("Nilai K:", value=1)
 
-f_val = f.subs({x: x0, y: y0})
 L_val = L.subs({x: x0, y: y0})
 K_val = K.subs({x: x0, y: y0})
 
