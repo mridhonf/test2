@@ -25,8 +25,8 @@ st.write("=============================================")
 fL = sp.diff(f, L)
 fK = sp.diff(f, K)
 
-L0 = st.number_input("Nilai L:", value=1)
-K0 = st.number_input("Nilai K:", value=1)
+L_val = st.number_input("Nilai L:", value=1)
+K_val = st.number_input("Nilai K:", value=1)
 
 L_val = L.subs({L: L0, K: K0})
 K_val = K.subs({L: L0, K: K0})
